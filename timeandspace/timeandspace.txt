@@ -1,0 +1,25 @@
+
+O(1)
+Constant time — no matter input size (e.g., accessing arr[i])
+
+O(n)
+Single loop over input of size n
+
+O(n + m)
+Two separate loops over two different inputs (n and m)
+
+O(n²)
+Nested loops over same input (comparing all pairs)
+
+O(log n)
+Halving the input size repeatedly (binary search, exponentiation)
+
+O(n log n)
+Sorting algorithms like Merge Sort, Quick Sort
+
+O(2^n)
+Brute-force recursion over subsets, permutations
+
+O(n!)
+Permutations of n elements (like TSP, backtracking all possibilities)
+
