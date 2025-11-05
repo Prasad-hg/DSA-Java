@@ -29,3 +29,4 @@ public class practiseQ{
     System.out.println(pair_sum(list));
     }
 }
+
