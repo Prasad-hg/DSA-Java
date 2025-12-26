@@ -18,7 +18,7 @@ public class maxArea{
             s.push(i);
         }
         s = new Stack<>(); 
-        for(int i=arr.length;i>=0;i--){
+        for(int i=arr.length-1;i>=0;i--){
             while(!s.isEmpty()&&arr[s.peek()]>=arr[i]){
                 s.pop();
             }
@@ -30,7 +30,7 @@ public class maxArea{
             s.push(i);
         }
 
-        for(int i=0;i<arr.length-1;i++){
+        for(int i=0;i<arr.length;i++){
             int curheight = arr[i];
             int area = curheight*(nsr[i] - nsl[i] - 1);
             maxarea = Math.max(area, maxarea);
@@ -39,8 +39,8 @@ public class maxArea{
         System.out.println("max area " + maxarea);
     }
     public static void main(String args[]){
-        // int arr[] = {2,1,5,6,2,3};
-        int arr[] = {2,4};
+        int arr[] = {2,1,5,6,2,3};
+        // int arr[] = {2,4};
         max(arr);
     }
 }
